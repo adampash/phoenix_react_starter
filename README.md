@@ -1,5 +1,22 @@
 # PhoenixReactStarter
 
+To set up:
+
+```bash
+git clone https://github.com/adampash/phoenix_react_starter.git <your_proj_name>
+mix deps.get
+npm install
+```
+
+To rename your project, run a project-wide find and replace, replacing `PhoenixReactStarter` with `YourAppName` and `phoenix_react_starter` with `your_app_name`.
+
+Then run:
+
+```bash
+iex -S mix phoenix.server
+```
+
+
 To start your Phoenix app:
 
   * Install dependencies with `mix deps.get`
