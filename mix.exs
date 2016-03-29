@@ -48,8 +48,8 @@ defmodule PhoenixReactStarter.Mixfile do
   defp aliases do
     [
       "ecto.setup": ["ecto.create", "ecto.migrate", "run priv/repo/seeds.exs"],
-     "ecto.reset": ["ecto.drop", "ecto.setup"],
-      aliases: ["phoenix.digest": "js.digest"]
+      "ecto.reset": ["ecto.drop", "ecto.setup"],
+      "phoenix.digest": "js.digest"
    ]
   end
 end
