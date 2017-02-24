@@ -11,7 +11,7 @@ publicPath + '__webpack_hmr'
 
 var plugins = [
   new webpack.optimize.OccurrenceOrderPlugin(),
-  new webpack.NoErrorsPlugin(),
+  new webpack.NoEmitOnErrorsPlugin(),
   new webpack.DefinePlugin({
     __PROD: prod,
     __DEV: env === 'dev'
@@ -40,10 +40,10 @@ module.exports = {
     }
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?$/,
-        loaders: ['babel'],
+        loaders: ['babel-loader'],
         exclude: path.resolve(__dirname, 'node_modules')
       },
       {
@@ -53,7 +53,7 @@ module.exports = {
       }
     ]
   },
-  postcss: function () {
-    return [require('postcss-cssnext')]
-  },
+  // postcss: function () {
+  //   return [require('postcss-cssnext')]
+  // },
 }
