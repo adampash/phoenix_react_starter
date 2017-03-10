@@ -4,7 +4,6 @@ import { Socket } from 'phoenix'
 import '../css/app.scss'
 
 import React, { Component } from 'react'
-// import { ContentState, convertToRaw, convertFromRaw } from 'draft-js'
 import { render } from 'react-dom'
 
 window.React = React
